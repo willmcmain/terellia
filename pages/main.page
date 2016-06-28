@@ -1,0 +1,5 @@
+<%= s.main %>
+
+<% $.each(s.actions, function(key, action) { %>
+[[<%=key%>|<%=action.text%>]]
+<% }); %>

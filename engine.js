@@ -42,11 +42,11 @@ Engine.load = function(page) {
 
 
 Engine.render_links = function(str) {
-    var regx = /\[\[(\w+)\|?(\w*)\]\]/g;
+    var regx = /\[\[(\w+)\|?(.*)\]\]/g;
     return str.replace(regx, function(match, target, text) {
-        if(Engine._pages[target] === undefined) {
+        /*if(Engine._pages[target] === undefined) {
             throw Error("Target '" + target + "' does not exist!");
-        }
+        }*/
         if(text === '') {
             text = target;
         }
@@ -57,8 +57,15 @@ Engine.render_links = function(str) {
 
 
 Engine.process = function(text) {
-    text = this.render_links(text);
+    var md = new Remarkable({
+        html: true,
+        xhtmlOut: true,
+        breaks: true,
+    });
+
     text = _.template(text)({s: Engine.state});
+    text = this.render_links(text);
+    text = md.render(text);
     return text;
 }
 

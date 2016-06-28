@@ -1,0 +1,28 @@
+Stardate 48935.12
+
+You arrive at Terellia 3. The Terellian ambassador is waiting for you. You beam over to Outpost Alpha in orbit around Terellia 3 to begin negotiations.
+
+[[main|Begin]]
+
+<%
+s.actions = {
+  "greeting": {
+    "text": "Greetings Ambassador. First, I would like to thank you on behalf of the Federation for agreeing to meet with us.",
+    "enabled": true
+  },
+  "request": {
+    "text": "Let's get down to it. The Federation would like Terellia to open its borders and allow Federation ships to move freely within the Terellian system, and to use Terellia 3 as a port of call.",
+    "enabled": true
+  },
+  "demand": {
+    "text": "Look, you know why we're here. The Federation needs access to your system in order to secure ourselves against the Romulans. Give us what we want.",
+    "enabled": true
+  },
+  "threaten": {
+    "text": "Look, you know why we're here. If you will not acceed to our requests we will open your borders by any means necessary.",
+    "enabled": true
+  },
+};
+
+s.main = "You enter the negotiating room. At a large, oval table sits the Terellian ambassador and two aides. You sit down opposite the ambassador at the table.";
+%>
