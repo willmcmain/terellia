@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'LCARS';
+    src: url('../fonts/lcarsgtj3.eot');
+	src: url('../fonts/lcarsgtj3.eot?#iefix') format('embedded-opentype'), url('../fonts/lcarsgtj3.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LCARS Lower';
+    src: url('../fonts/lcarsunknown.eot');
+	src: url('../fonts/lcarsunknown.eot?#iefix') format('embedded-opentype'), url('../fonts/lcarsunknown.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LCARS Block';
+    src: url('../fonts/LCARS-BLOCK.eot');
+	src: url('../fonts/LCARS-BLOCK.eot?#iefix') format('embedded-opentype'), url('../fonts/LCARS-BLOCK.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    font-family: 'LCARS Lower';
+    color: #FC6;
+    font-size: 1.75em;
+    letter-spacing: 0.5px;
+}
+
+a {
+    text-decoration: none;
+    color: #36F;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #369;
+}
+
+#content {
+    max-width: 800px;
+    margin-left: 200px;
+}
