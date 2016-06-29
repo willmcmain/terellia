@@ -25,4 +25,11 @@ s.actions = {
 };
 
 s.main = "You enter the negotiating room. At a large, oval table sits the Terellian ambassador and two aides. You sit down opposite the ambassador at the table.";
+
+
+s.negotiations = {
+    current: 0, // how well the negotiations are going currently.
+    events: {
+    },
+};
 %>

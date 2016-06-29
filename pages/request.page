@@ -1,0 +1,7 @@
+<%
+  s.negotiations.current += 10;
+  s.actions['request'].enabled = false;
+  s.main = "Yes, we understand your request, and it is a reasonable one.";
+
+  Engine.load("main");
+%>

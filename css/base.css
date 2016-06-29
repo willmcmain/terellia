@@ -22,6 +22,10 @@
     font-style: normal;
 }
 
+h1, h2, h3, h4, h5 {
+    font-family: 'LCARS';
+}
+
 body {
     background-color: black;
     font-family: 'LCARS Lower';
@@ -35,6 +39,11 @@ a {
     color: #36F;
 }
 
+strong {
+    font-family: "LCARS";
+    font-weight: normal;
+}
+
 a:hover {
     text-decoration: underline;
     color: #369;
@@ -43,4 +52,5 @@ a:hover {
 #content {
     max-width: 800px;
     margin-left: 200px;
+    min-height: 600px;
 }

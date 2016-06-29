@@ -1,5 +1,21 @@
 <%= s.main %>
 
-<% $.each(s.actions, function(key, action) { %>
-[[<%=key%>|<%=action.text%>]]
-<% }); %>
+<%
+if(s.negotiations.current > 30) {
+}
+else if(s.negotiations.current > 20) {
+}
+else if(s.negotiations.current > 10) {
+}
+else if(s.negotiations.current > -10) {
+    $.each(s.actions, function(key, action) {
+        if(action.enabled === true) {
+            print("[["+key+"|"+action.text+"]]\n\n");
+        }
+    });
+}
+else if(s.negotiations.current > -20) {
+}
+else { // current < -20 == BAD
+}
+%>

@@ -1,0 +1,7 @@
+<%
+s.negotiations.current += 5;
+s.actions['greeting'].enabled = false;
+s.main = "Thanks blah blah whatever";
+
+Engine.load("main");
+%>

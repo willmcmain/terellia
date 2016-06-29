@@ -1,0 +1,10 @@
+<%
+  s.negotiations.current -= 20;
+  s.actions['request'].enabled = false;
+  s.actions['demand'].enabled = false;
+  s.actions['threaten'].enabled = false;
+
+  s.main = "How DARE you threaten us. We will not be cowed by you or anyone else.";
+
+  Engine.load("main");
+%>

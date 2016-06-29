@@ -1,0 +1,9 @@
+<%
+  s.negotiations.current -= 10;
+  s.actions['request'].enabled = false;
+  s.actions['demand'].enabled = false;
+
+  s.main = "Very presumptuous of you to come in here and make demands of us.";
+
+  Engine.load("main");
+%>
